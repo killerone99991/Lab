@@ -75,11 +75,11 @@ public class Array {
         do {
             System.out.print("Please enter size of array: ");
             size = scanner.nextLine();
-            if (!size.matches("^\\s*-?\\d+\\s*$")) {
+           if (!size.matches("^\\s*\\d+\\s*$")) {
                 System.out.println("Please enter integer number");
 
             }
-        } while (!size.matches("^\\s*-?\\d+\\s*$"));
+        } while(!size.matches("^\\s*\\d+\\s*$"));
         String numberOnly1 = size.replaceAll("[^0-9]", "");
         num1 = Integer.parseInt(numberOnly1);
         array = new double[num1];
