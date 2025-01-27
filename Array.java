@@ -76,7 +76,7 @@ public class Array {
             System.out.print("Please enter size of array: ");
             size = scanner.nextLine();
            if (!size.matches("^\\s*\\d+\\s*$")) {
-                System.out.println("Please enter integer number");
+                System.out.println("Please enter positive integer number");
 
             }
         } while(!size.matches("^\\s*\\d+\\s*$"));
@@ -92,7 +92,7 @@ public class Array {
 
               if (!size.matches("^\\s*-?\\d+(\\.\\d+)?\\s*$")) {
 
-                    System.out.println("Please enter number");
+                    System.out.println("Please enter valid number");
                 }
 
             } while (!size.matches("^\\s*-?\\d+(\\.\\d+)?\\s*$"));
@@ -115,6 +115,15 @@ public class Array {
      * Method to display the array elements. Prints each element separated by a
      * space.
      */
+    
+    public void handleArray(){
+       for (double value : array) {
+            if (value == (int) value) {
+                value = (int) value;      
+        }
+    }
+    }
+    
     public void displayArray() {
         for (double value : array) {
             if (value == (int) value) {
