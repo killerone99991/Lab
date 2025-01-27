@@ -32,18 +32,18 @@ public class S01 {
         Array array = new Array();
 
         // Input the initial array from the user
+        System.out.print("Please enter size of array: ");
         array.inputArray();
 
         // Display the sorted array
         array.sortArray(); // Sort the array
-
-        array.displayArray(); // Display the sorted array
+        System.out.println("The array after sorting:\n" + array); // Display the sorted array
 
         // Insert the new element into the array
+        System.out.print("Please enter new value: ");
         array.insertElement();
 
         // Display the array after the insertion
-        System.out.println("New array: ");
-        array.displayArray();
+        System.out.println("New array: " + array);
     }
 }
