@@ -1,0 +1,110 @@
+/* Apply styles to the entire body */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;  
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Skip to Main Content Link */
+  .skip-link {
+    position: absolute;
+    top: -40px;
+    left: 10px;
+    background: #000;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    z-index: 100;
+  }
+  
+  .skip-link:focus {
+    top: 10px;
+  }
+  
+  /* Style the header */
+  header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Style the navigation bar */
+  nav {
+    background-color: #444;
+    padding: 10px;
+    display: inline-block;
+    width: 80%; /* Yêu cầu thay đổi width */
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    width: auto;
+    margin-right: 20px;
+  }
+  
+  /* Style the navigation images */
+  nav img {
+    width: 10%; /* Yêu cầu điều chỉnh ảnh trong nav */
+  }
+  
+  /* Style the main content */
+  main {
+    background-color: #f4f4f4;
+    font-size: 18px;
+    padding: 20px;
+  }
+  
+  main#main-content {
+    scroll-margin-top: 50px; /* Giúp "Skip to Main Content" nhảy đến đúng chỗ */
+  }
+  
+  /* Style the grid */
+  .grid {
+    display: grid;
+    grid-template-columns: 40% 40%; /* Yêu cầu tạo 2 cột */
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+  }
+  
+  .grid img {
+    width: 100%; /* Yêu cầu đảm bảo ảnh full trong grid */
+  }
+  
+  /* Style the flex container */
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Tinh chỉnh căn chỉnh */
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /* Style headings */
+  h1 {
+    text-align: center;
+    font-family: "Georgia", serif;
+    color: #222;
+  }
+  
+  /* Style paragraphs */
+  p {
+    line-height: 1.6;
+  }
+  
